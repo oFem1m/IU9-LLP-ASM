@@ -2,8 +2,6 @@ assume CS:code, DS:data
 
 data segment
 arr dw 0, 1, 2, 3
-len db 4
-result db -1
 element dw 0
 data ends
 
@@ -13,7 +11,6 @@ start:
     mov DS, AX
     mov AH, 00h      
 
-    mov CL, len
     mov SI, 0
 search:
     mov AX, arr[SI]
