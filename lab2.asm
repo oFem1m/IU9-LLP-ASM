@@ -28,8 +28,7 @@ success:
     add DL, '0'
     int 21h
 
-mov AH, 4Ch
-int 21h
-
+    mov AH, 4Ch
+    int 21h
 code ends
 end start
