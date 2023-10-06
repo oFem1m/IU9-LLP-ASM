@@ -17,7 +17,7 @@ search:
     cmp AX, element
     je success
     add SI, 2
-    loop search
+    jmp search
 
 success:
     mov AH, 02h
